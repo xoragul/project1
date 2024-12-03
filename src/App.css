@@ -1,0 +1,120 @@
+* {
+
+  --text_black:rgb(255, 255, 255);
+  --text_blue:rgb(0, 0, 0);
+  --text_white:rgb(0, 0, 0);
+
+  --black_bg: rgb(0, 0, 0);
+  --black_top: rgb(161, 161, 161);
+  --black_topContent:rgb(0, 0, 0);
+  --black_num: rgb(48, 48, 48);
+  --black_numContent:rgb(255, 255, 255);
+  --black_sybm: rgb(252, 171, 21);
+  --black_overBg: rgb(230, 235, 235);
+
+  --white_overBg: rgb(0, 0, 0);
+  --white_bg: rgb(255, 255, 255);
+  --white_top: rgb(255, 202, 56);
+  --white_topContent:rgb(0, 0, 0);
+  --white_num: rgb(192, 192, 192);
+  --white_numContent:rgb(37, 37, 37);
+  --white_sybm: rgb(252, 171, 21);
+
+  --blue_overBg: rgb(48, 214, 255);
+  --blue_bg: rgb(255, 255, 255);
+  --blue_num: rgb(192, 192, 192);
+  --blue_numContent:rgb(37, 37, 37);
+  --blue_top: rgb(36, 186, 255);
+  --blue_topContent:rgb(255, 255, 255);
+  --blue_sybm: rgb(21, 102, 252);
+}
+
+
+.App {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.App .calculator {
+  color: white;
+  width: 300px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.App .calculator p {
+  font-size: 50px;
+  text-align: right;
+}
+
+.App .calculator .buttons {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  gap: 20px;
+}
+
+.App .calculator .buttons button {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: none;
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.App .calculator .buttons .num {
+  color: white;
+  background-color: rgb(48, 48, 48);
+}
+
+.App .calculator .buttons .del {
+  color: white;
+  background-color: rgb(255, 36, 36);
+}
+
+.App .calculator .buttons .sybm {
+  color: white;
+  background-color: rgb(252, 171, 21);
+}
+
+.App .theme {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  gap: 10px;
+  background-color: rgb(241, 241, 241);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.App .theme .box {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+.App .theme .one {
+  background-color: rgb(0, 0, 0);
+
+}
+
+
+.App .theme .two {
+  background-color: rgb(255, 255, 255);
+
+}
+
+
+.App .theme .three {
+  background-color: rgb(41, 212, 255);
+}
+
+.App .theme .active {
+  outline: 2px solid black;
+  outline-offset: 2px;
+}
